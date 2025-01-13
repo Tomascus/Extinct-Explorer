@@ -13,7 +13,7 @@ public class BoatSwitch : MonoBehaviour
 
     void Update()
     {
-        if (onPort && Input.GetKeyDown(KeyCode.E))
+        if (onPort && Input.GetKeyDown(KeyCode.Q))
         {
             SwitchCharacter();
         }
@@ -24,7 +24,7 @@ public class BoatSwitch : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             onPort = true;
-            Debug.Log("Press E to switch to the boat.");
+            Debug.Log("Press Q to switch to boat");
         }
     }
 
